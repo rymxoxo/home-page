@@ -157,6 +157,8 @@
     .btn--primary {
         background-color: var(--color-secondary);
         color: white;
+        display: flex;
+        align-items: flex-end;
     }
     
     .btn--primary:hover {
@@ -202,7 +204,6 @@
     .article {
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
     
     .article__images {
@@ -218,13 +219,26 @@
     }
     
     @media screen and (min-width: 768px) {
+        .feature {
+            background-color: var(--color-primary);
+            margin-top: 0
+        }
+        .article__images_desktop {
+            display: inline-block !important;
+        }
+        .article__images {
+            display: none
+        }
         .feature__article {
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: 75% 25%;
+            gap: 2
         }
         .article__body {
             display: flex;
             justify-content: space-around;
+            align-items: flex-end;
+            margin-top: 5%;
         }
         .article__subsection {
             display: flex;
