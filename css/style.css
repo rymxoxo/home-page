@@ -225,6 +225,7 @@
         }
         .article__images_desktop {
             display: inline-block !important;
+            margin-left: 1%
         }
         .article__images {
             display: none
