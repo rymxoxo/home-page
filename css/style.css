@@ -157,8 +157,6 @@
     .btn--primary {
         background-color: var(--color-secondary);
         color: white;
-        display: flex;
-        align-items: flex-end;
     }
     
     .btn--primary:hover {
